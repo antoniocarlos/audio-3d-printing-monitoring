@@ -1,0 +1,8 @@
+/logs
+/node_modules
+/coverage
+/.nyc_output
+.env
+.DS_Store
+newrelic_agent.log
+docker-compose.override.yml
