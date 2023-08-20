@@ -31,7 +31,7 @@ O áudio é um indicador poderoso do que está acontecendo em muitos sistemas me
 5. **Velocidade e Aceleração**: Através do padrão de ruído, pode ser possível discernir se a impressora está acelerando, desacelerando ou mantendo uma velocidade constante.
 6. **Início e Fim da Impressão**: Os sons característicos no início e no final da impressão podem ser identificados, ajudando na demarcação do tempo total do processo.
 
-futuros estudos
+**Futuros estudos**
 
 1. **Frequência de Calibração**: Alterações no tom podem indicar que a mesa ou a cabeça de impressão estão desalinhadas e precisam de recalibração.
 2. **Estabilidade da Fonte de Alimentação**: Variações ou flutuações no áudio podem indicar problemas na fonte de alimentação ou nos motores.(faixas de audio parada)
