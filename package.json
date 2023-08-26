@@ -1,0 +1,11 @@
+{
+  "name": "audio-3d-printing-monitoring",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/antoniocarlos/audio-3d-printing-monitoring.git",
+  "author": "Antonio Carlos Santos Thiele <antoniocarloss60@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "g-code-to-csv": "node ./scripts/g-code-to-csv.js"
+  }
+}
