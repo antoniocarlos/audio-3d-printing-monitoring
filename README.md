@@ -1,7 +1,7 @@
 # Monitoramento de Impressão 3D Através do Áudio
 
 [Arquivos de tabelas](https://drive.google.com/drive/folders/1TiW6kuxkCeYQxQ0vHFR0maQ3vdzkjnm5?usp=sharing)
-***Acesso apenas para emails do instituto Infnet***
+`Acesso apenas para emails do instituto Infnet`
 
 O presente trabalho tem como objetivo capturar os ruídos produzidos por uma impressora 3D durante sua operação. Posteriormente, esses dados sonoros são comparados com as configurações de impressão e com o arquivo G-code (comandos de controle numérico). A meta é extrair informações sobre o funcionamento do equipamento, identificando pontos de estresse mecânico, níveis de ruído e o impacto das configurações de impressão.
 
