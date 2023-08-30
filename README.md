@@ -61,6 +61,57 @@ beeline -u jdbc:hive2://localhost:10000/default -n <usuario>@<cluster> -d org.ap
 
 Foi criada uma base de dados chamada `3d_printing`, e as tabelas foram criadas e populadas seguindo as instruções específicas para cada uma delas. Estas incluem tabelas de Transformada de Fourier e tabelas de amplitude, bem como a tabela principal contendo os comandos de G-code.
 
+As tabelas foram cridas e populadas com os seguintes comandos para cada tabela:
+
+- Tabelas de tranformada de fourier:
+
+```bash
+CREATE TABLE layer_x_fourier_transform (
+    FREQUENCY DOUBLE,
+    MAGNITUDE DOUBLE
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE;
+
+LOAD DATA INPATH '/user/asantosthiele/layer-x-fourier-transform.csv' overwrite into table layer_x_fourier_transform;
+```
+
+- Tabelas de amplitudes:
+
+```bash
+CREATE TABLE layer_x_amplitude (
+    `TIME` DOUBLE,
+    AMPLITUDE DOUBLE
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE;
+
+LOAD DATA INPATH '/user/asantosthiele/layer-x-amplitude.csv' overwrite into table layer_x_amplitude;
+```
+
+- Tabela G-Code
+
+```bash
+CREATE TABLE gcode (
+    Line INT,
+    Command STRING,
+    X FLOAT,
+    Y FLOAT,
+    Z FLOAT,
+    E FLOAT,
+    F FLOAT,
+    Comment STRING,
+    Layer INT
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE;
+
+LOAD DATA INPATH '/user/asantosthiele/gcode.csv' overwrite into table gcode;
+```
+
 O resultado da execução desses scripts inclui as seguintes tabelas:
 
 - gcode
